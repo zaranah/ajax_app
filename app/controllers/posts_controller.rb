@@ -2,8 +2,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.order(id: "DESC")
-    # allなくていいの？
-    # @posts = Post.all
   end
 
   # def new
